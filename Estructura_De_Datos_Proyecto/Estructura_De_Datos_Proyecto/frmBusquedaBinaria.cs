@@ -18,6 +18,8 @@ namespace Estructura_De_Datos_Proyecto
         }
 
         int[] valores;
+        RegularExpressions reg = new RegularExpressions();
+        ErrorProvider err = new ErrorProvider();
 
         private void NumerosGrid(DataGridView dgv)
         {
@@ -29,6 +31,7 @@ namespace Estructura_De_Datos_Proyecto
 
         public static object Busqueda(int[] num, int num2)
         {
+            //num.OrderBy(i>=num);
             int minimo = 0;
             int maximo = num.Length - 1;
 
@@ -68,6 +71,7 @@ namespace Estructura_De_Datos_Proyecto
                 valores[i] = r.Next(0, Convert.ToInt32(txtNumero.Text));
                 //dgvBusqueda.Rows.Add(r.Next(0, Convert.ToInt32(txtLimite.Text)).ToString());
             }
+            Array.Sort(valores);
             dgvBusqueda.DataSource = valores.Select(x => new { Números = x }).ToList();
             NumerosGrid(dgvBusqueda);
         }
@@ -76,6 +80,42 @@ namespace Estructura_De_Datos_Proyecto
         {
             txtNumero.Clear();
             txtLimite.Clear();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if(txtBuscar.Text == "")
+            {
+                err.SetError(txtBuscar, "El campo de búsqueda está vacío");
+            }
+            else
+            {
+
+            }
+        }
+
+        private void txtNumero_TextChanged(object sender, EventArgs e)
+        {
+            if(!RegularExpressions.NumerosEnteros(txtNumero.Text))
+            {
+                txtNumero.Clear();
+            }
+        }
+
+        private void txtLimite_TextChanged(object sender, EventArgs e)
+        {
+            if (!RegularExpressions.NumerosEnteros(txtLimite.Text))
+            {
+                txtLimite.Clear();
+            }
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            if (!RegularExpressions.NumerosEnteros(txtBuscar.Text))
+            {
+                txtBuscar.Clear();
+            }
         }
     }
 }

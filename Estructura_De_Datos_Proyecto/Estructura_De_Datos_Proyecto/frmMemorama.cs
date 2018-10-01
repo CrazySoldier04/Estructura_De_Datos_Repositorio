@@ -24,17 +24,17 @@ namespace Estructura_De_Datos_Proyecto
         private PictureBox picTemp = null;
         private int intentos = 0;
         private String nombre = frmDatos.nombre;
-        private int nivel = 0;
+        //private int nivel = 0;
         private int tiempo;
         private int contador = 0;
-        int horas = 0;
+        //int horas = 0;
         int minutos = 0;
 
         private void Responsive()
         {
             lblIntentos.Location = new Point(0, pnlTitulo.Height / 2 - lblIntentos.Height / 2);
             lblTitulo.Location = new Point(pnlTitulo.Width / 2 - lblTitulo.Width / 2, pnlTitulo.Height / 2 - lblTitulo.Height / 2);
-            lblTimer2.Location = new Point(Convert.ToInt32(pnlTitulo.Width * 0.94), pnlTitulo.Height / 2 - lblTimer2.Height / 2);
+            lblTimer2.Location = new Point(Convert.ToInt32(pnlTitulo.Width * 0.90), pnlTitulo.Height / 2 - lblTimer2.Height / 2);
             pictureBox0.Width = Convert.ToInt32(pnlContenido.Width * 0.125);
             pictureBox0.Height = Convert.ToInt32(pnlContenido.Height * 0.50);
             pictureBox0.Location = new Point(0, 0);
@@ -171,11 +171,12 @@ namespace Estructura_De_Datos_Proyecto
                     break;
             }
             carta.Update();
-            if(!before)
+            if (!before)
             {
                 before = true;
                 indiceTemp = num;
                 picTemp = carta;
+                picTemp.Enabled = false;
             }
             else
             {

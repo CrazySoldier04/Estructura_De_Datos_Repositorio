@@ -30,32 +30,31 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBusquedaBinaria));
             this.pnlTitulo = new System.Windows.Forms.Panel();
+            this.pbxCerrar = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pnlContenido = new System.Windows.Forms.Panel();
             this.pnlTrabajo = new System.Windows.Forms.Panel();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.lblBuscar = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnRandom = new System.Windows.Forms.Button();
+            this.txtLimite = new System.Windows.Forms.TextBox();
+            this.lblLimite = new System.Windows.Forms.Label();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             this.lblElementos = new System.Windows.Forms.Label();
             this.dgvBusqueda = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlInfo = new System.Windows.Forms.Panel();
-            this.lblBusqueda = new System.Windows.Forms.Label();
-            this.pbxBusqueda = new System.Windows.Forms.PictureBox();
-            this.pbxCerrar = new System.Windows.Forms.PictureBox();
             this.txtInfo = new System.Windows.Forms.TextBox();
-            this.txtNumero = new System.Windows.Forms.TextBox();
-            this.lblLimite = new System.Windows.Forms.Label();
-            this.txtLimite = new System.Windows.Forms.TextBox();
-            this.btnRandom = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.lblBuscar = new System.Windows.Forms.Label();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.pbxBusqueda = new System.Windows.Forms.PictureBox();
+            this.lblBusqueda = new System.Windows.Forms.Label();
             this.pnlTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
             this.pnlContenido.SuspendLayout();
             this.pnlTrabajo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusqueda)).BeginInit();
             this.pnlInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBusqueda)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTitulo
@@ -68,6 +67,17 @@
             this.pnlTitulo.Name = "pnlTitulo";
             this.pnlTitulo.Size = new System.Drawing.Size(917, 31);
             this.pnlTitulo.TabIndex = 0;
+            // 
+            // pbxCerrar
+            // 
+            this.pbxCerrar.BackgroundImage = global::Estructura_De_Datos_Proyecto.Properties.Resources.Windows_Close_Program_22531;
+            this.pbxCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxCerrar.Location = new System.Drawing.Point(883, 0);
+            this.pbxCerrar.Name = "pbxCerrar";
+            this.pbxCerrar.Size = new System.Drawing.Size(34, 31);
+            this.pbxCerrar.TabIndex = 1;
+            this.pbxCerrar.TabStop = false;
+            this.pbxCerrar.Click += new System.EventHandler(this.pbxCerrar_Click);
             // 
             // lblTitulo
             // 
@@ -110,6 +120,80 @@
             this.pnlTrabajo.Size = new System.Drawing.Size(484, 462);
             this.pnlTrabajo.TabIndex = 1;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(216, 145);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(92, 27);
+            this.btnBuscar.TabIndex = 9;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(93, 145);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(100, 27);
+            this.txtBuscar.TabIndex = 8;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
+            // 
+            // lblBuscar
+            // 
+            this.lblBuscar.AutoSize = true;
+            this.lblBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.lblBuscar.Location = new System.Drawing.Point(18, 148);
+            this.lblBuscar.Name = "lblBuscar";
+            this.lblBuscar.Size = new System.Drawing.Size(69, 21);
+            this.lblBuscar.TabIndex = 7;
+            this.lblBuscar.Text = "Buscar: ";
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(338, 66);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(92, 27);
+            this.btnLimpiar.TabIndex = 6;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnRandom
+            // 
+            this.btnRandom.Location = new System.Drawing.Point(216, 66);
+            this.btnRandom.Name = "btnRandom";
+            this.btnRandom.Size = new System.Drawing.Size(92, 27);
+            this.btnRandom.TabIndex = 5;
+            this.btnRandom.Text = "Random";
+            this.btnRandom.UseVisualStyleBackColor = true;
+            this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
+            // 
+            // txtLimite
+            // 
+            this.txtLimite.Location = new System.Drawing.Point(81, 66);
+            this.txtLimite.Name = "txtLimite";
+            this.txtLimite.Size = new System.Drawing.Size(100, 27);
+            this.txtLimite.TabIndex = 4;
+            this.txtLimite.TextChanged += new System.EventHandler(this.txtLimite_TextChanged);
+            // 
+            // lblLimite
+            // 
+            this.lblLimite.AutoSize = true;
+            this.lblLimite.BackColor = System.Drawing.Color.Transparent;
+            this.lblLimite.Location = new System.Drawing.Point(12, 69);
+            this.lblLimite.Name = "lblLimite";
+            this.lblLimite.Size = new System.Drawing.Size(63, 21);
+            this.lblLimite.TabIndex = 3;
+            this.lblLimite.Text = "Límite: ";
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Location = new System.Drawing.Point(208, 10);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(100, 27);
+            this.txtNumero.TabIndex = 2;
+            this.txtNumero.TextChanged += new System.EventHandler(this.txtNumero_TextChanged);
+            // 
             // lblElementos
             // 
             this.lblElementos.AutoSize = true;
@@ -127,8 +211,6 @@
             this.dgvBusqueda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBusqueda.BackgroundColor = System.Drawing.Color.White;
             this.dgvBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBusqueda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1});
             this.dgvBusqueda.Location = new System.Drawing.Point(12, 204);
             this.dgvBusqueda.Name = "dgvBusqueda";
             this.dgvBusqueda.ReadOnly = true;
@@ -136,12 +218,6 @@
             this.dgvBusqueda.Size = new System.Drawing.Size(465, 246);
             this.dgvBusqueda.TabIndex = 0;
             this.dgvBusqueda.TabStop = false;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
             // 
             // pnlInfo
             // 
@@ -155,36 +231,6 @@
             this.pnlInfo.Size = new System.Drawing.Size(434, 462);
             this.pnlInfo.TabIndex = 0;
             // 
-            // lblBusqueda
-            // 
-            this.lblBusqueda.AutoSize = true;
-            this.lblBusqueda.Location = new System.Drawing.Point(152, 13);
-            this.lblBusqueda.Name = "lblBusqueda";
-            this.lblBusqueda.Size = new System.Drawing.Size(146, 21);
-            this.lblBusqueda.TabIndex = 0;
-            this.lblBusqueda.Text = "Búsqueda binaria";
-            // 
-            // pbxBusqueda
-            // 
-            this.pbxBusqueda.Image = global::Estructura_De_Datos_Proyecto.Properties.Resources.f0801;
-            this.pbxBusqueda.Location = new System.Drawing.Point(10, 37);
-            this.pbxBusqueda.Name = "pbxBusqueda";
-            this.pbxBusqueda.Size = new System.Drawing.Size(415, 233);
-            this.pbxBusqueda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxBusqueda.TabIndex = 1;
-            this.pbxBusqueda.TabStop = false;
-            // 
-            // pbxCerrar
-            // 
-            this.pbxCerrar.BackgroundImage = global::Estructura_De_Datos_Proyecto.Properties.Resources.Windows_Close_Program_22531;
-            this.pbxCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxCerrar.Location = new System.Drawing.Point(883, 0);
-            this.pbxCerrar.Name = "pbxCerrar";
-            this.pbxCerrar.Size = new System.Drawing.Size(34, 31);
-            this.pbxCerrar.TabIndex = 1;
-            this.pbxCerrar.TabStop = false;
-            this.pbxCerrar.Click += new System.EventHandler(this.pbxCerrar_Click);
-            // 
             // txtInfo
             // 
             this.txtInfo.BackColor = System.Drawing.Color.White;
@@ -196,75 +242,24 @@
             this.txtInfo.TabIndex = 2;
             this.txtInfo.Text = resources.GetString("txtInfo.Text");
             // 
-            // txtNumero
+            // pbxBusqueda
             // 
-            this.txtNumero.Location = new System.Drawing.Point(208, 10);
-            this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(100, 27);
-            this.txtNumero.TabIndex = 2;
+            this.pbxBusqueda.Image = global::Estructura_De_Datos_Proyecto.Properties.Resources.f0801;
+            this.pbxBusqueda.Location = new System.Drawing.Point(10, 37);
+            this.pbxBusqueda.Name = "pbxBusqueda";
+            this.pbxBusqueda.Size = new System.Drawing.Size(415, 233);
+            this.pbxBusqueda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxBusqueda.TabIndex = 1;
+            this.pbxBusqueda.TabStop = false;
             // 
-            // lblLimite
+            // lblBusqueda
             // 
-            this.lblLimite.AutoSize = true;
-            this.lblLimite.BackColor = System.Drawing.Color.Transparent;
-            this.lblLimite.Location = new System.Drawing.Point(12, 69);
-            this.lblLimite.Name = "lblLimite";
-            this.lblLimite.Size = new System.Drawing.Size(63, 21);
-            this.lblLimite.TabIndex = 3;
-            this.lblLimite.Text = "Límite: ";
-            // 
-            // txtLimite
-            // 
-            this.txtLimite.Location = new System.Drawing.Point(81, 66);
-            this.txtLimite.Name = "txtLimite";
-            this.txtLimite.Size = new System.Drawing.Size(100, 27);
-            this.txtLimite.TabIndex = 4;
-            // 
-            // btnRandom
-            // 
-            this.btnRandom.Location = new System.Drawing.Point(216, 66);
-            this.btnRandom.Name = "btnRandom";
-            this.btnRandom.Size = new System.Drawing.Size(92, 27);
-            this.btnRandom.TabIndex = 5;
-            this.btnRandom.Text = "Random";
-            this.btnRandom.UseVisualStyleBackColor = true;
-            this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.Location = new System.Drawing.Point(338, 66);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(92, 27);
-            this.btnLimpiar.TabIndex = 6;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // lblBuscar
-            // 
-            this.lblBuscar.AutoSize = true;
-            this.lblBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.lblBuscar.Location = new System.Drawing.Point(18, 148);
-            this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(69, 21);
-            this.lblBuscar.TabIndex = 7;
-            this.lblBuscar.Text = "Buscar: ";
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Location = new System.Drawing.Point(93, 145);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(100, 27);
-            this.txtBuscar.TabIndex = 8;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(216, 145);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(92, 27);
-            this.btnBuscar.TabIndex = 9;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.lblBusqueda.AutoSize = true;
+            this.lblBusqueda.Location = new System.Drawing.Point(152, 13);
+            this.lblBusqueda.Name = "lblBusqueda";
+            this.lblBusqueda.Size = new System.Drawing.Size(146, 21);
+            this.lblBusqueda.TabIndex = 0;
+            this.lblBusqueda.Text = "Búsqueda binaria";
             // 
             // frmBusquedaBinaria
             // 
@@ -281,6 +276,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnlTitulo.ResumeLayout(false);
             this.pnlTitulo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).EndInit();
             this.pnlContenido.ResumeLayout(false);
             this.pnlTrabajo.ResumeLayout(false);
             this.pnlTrabajo.PerformLayout();
@@ -288,7 +284,6 @@
             this.pnlInfo.ResumeLayout(false);
             this.pnlInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBusqueda)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -302,7 +297,6 @@
         private System.Windows.Forms.Panel pnlTrabajo;
         private System.Windows.Forms.Panel pnlInfo;
         private System.Windows.Forms.DataGridView dgvBusqueda;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.Label lblElementos;
         private System.Windows.Forms.PictureBox pbxBusqueda;
         private System.Windows.Forms.Label lblBusqueda;

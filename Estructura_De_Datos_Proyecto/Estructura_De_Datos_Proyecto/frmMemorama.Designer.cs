@@ -88,7 +88,7 @@
             this.pnlTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitulo.Location = new System.Drawing.Point(0, 0);
             this.pnlTitulo.Name = "pnlTitulo";
-            this.pnlTitulo.Size = new System.Drawing.Size(1008, 34);
+            this.pnlTitulo.Size = new System.Drawing.Size(804, 34);
             this.pnlTitulo.TabIndex = 0;
             // 
             // lblIntentos
@@ -119,7 +119,7 @@
             this.pbxCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbxCerrar.BackgroundImage = global::Estructura_De_Datos_Proyecto.Properties.Resources.Windows_Close_Program_22531;
             this.pbxCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxCerrar.Location = new System.Drawing.Point(974, 0);
+            this.pbxCerrar.Location = new System.Drawing.Point(770, 0);
             this.pbxCerrar.Name = "pbxCerrar";
             this.pbxCerrar.Size = new System.Drawing.Size(34, 34);
             this.pbxCerrar.TabIndex = 1;
@@ -145,7 +145,7 @@
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMenu.Location = new System.Drawing.Point(0, 34);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(1008, 32);
+            this.pnlMenu.Size = new System.Drawing.Size(804, 32);
             this.pnlMenu.TabIndex = 1;
             // 
             // btnReiniciar
@@ -161,6 +161,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // pnlContenido
@@ -188,7 +189,7 @@
             this.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenido.Location = new System.Drawing.Point(0, 66);
             this.pnlContenido.Name = "pnlContenido";
-            this.pnlContenido.Size = new System.Drawing.Size(1008, 369);
+            this.pnlContenido.Size = new System.Drawing.Size(804, 369);
             this.pnlContenido.TabIndex = 2;
             // 
             // lblTimer
@@ -413,7 +414,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.ClientSize = new System.Drawing.Size(1008, 435);
+            this.ClientSize = new System.Drawing.Size(804, 435);
             this.Controls.Add(this.pnlContenido);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlTitulo);

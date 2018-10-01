@@ -76,6 +76,12 @@
     <Compile Include="frmMemorama.Designer.cs">
       <DependentUpon>frmMemorama.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPruebaDeFibonacci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPruebaDeFibonacci.Designer.cs">
+      <DependentUpon>frmPruebaDeFibonacci.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRecursividad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegularExpressions.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMemorama.resx">
       <DependentUpon>frmMemorama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPruebaDeFibonacci.resx">
+      <DependentUpon>frmPruebaDeFibonacci.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRecursividad.resx">
       <DependentUpon>frmRecursividad.cs</DependentUpon>
