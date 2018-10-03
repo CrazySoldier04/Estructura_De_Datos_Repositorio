@@ -33,13 +33,14 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pnlContenido = new System.Windows.Forms.Panel();
             this.pnlInfo = new System.Windows.Forms.Panel();
+            this.lblPruebaFibonacci = new System.Windows.Forms.Label();
             this.pbxFoto = new System.Windows.Forms.PictureBox();
             this.lblResultado = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.lblPosicion = new System.Windows.Forms.Label();
-            this.lblPruebaFibonacci = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
             this.pnlContenido.SuspendLayout();
@@ -74,6 +75,7 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
             this.lblTitulo.Location = new System.Drawing.Point(268, 8);
@@ -108,13 +110,25 @@
             this.pnlInfo.Size = new System.Drawing.Size(413, 377);
             this.pnlInfo.TabIndex = 5;
             // 
+            // lblPruebaFibonacci
+            // 
+            this.lblPruebaFibonacci.AutoSize = true;
+            this.lblPruebaFibonacci.BackColor = System.Drawing.Color.Transparent;
+            this.lblPruebaFibonacci.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPruebaFibonacci.Location = new System.Drawing.Point(120, 21);
+            this.lblPruebaFibonacci.Name = "lblPruebaFibonacci";
+            this.lblPruebaFibonacci.Size = new System.Drawing.Size(172, 19);
+            this.lblPruebaFibonacci.TabIndex = 1;
+            this.lblPruebaFibonacci.Text = "Prueba de Fibonacci";
+            // 
             // pbxFoto
             // 
             this.pbxFoto.BackgroundImage = global::Estructura_De_Datos_Proyecto.Properties.Resources.secuencia_de_fibonacci_2;
             this.pbxFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxFoto.Location = new System.Drawing.Point(7, 50);
+            this.pbxFoto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbxFoto.Location = new System.Drawing.Point(0, 50);
             this.pbxFoto.Name = "pbxFoto";
-            this.pbxFoto.Size = new System.Drawing.Size(398, 314);
+            this.pbxFoto.Size = new System.Drawing.Size(413, 324);
             this.pbxFoto.TabIndex = 0;
             this.pbxFoto.TabStop = false;
             // 
@@ -122,7 +136,7 @@
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.BackColor = System.Drawing.Color.Transparent;
-            this.lblResultado.Location = new System.Drawing.Point(12, 252);
+            this.lblResultado.Location = new System.Drawing.Point(12, 347);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(57, 21);
             this.lblResultado.TabIndex = 4;
@@ -131,6 +145,7 @@
             // txtNumero
             // 
             this.txtNumero.Location = new System.Drawing.Point(55, 21);
+            this.txtNumero.MaxLength = 2;
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(100, 27);
             this.txtNumero.TabIndex = 3;
@@ -138,11 +153,22 @@
             // 
             // dgvDatos
             // 
+            this.dgvDatos.AllowUserToAddRows = false;
+            this.dgvDatos.AllowUserToDeleteRows = false;
+            this.dgvDatos.AllowUserToResizeColumns = false;
+            this.dgvDatos.AllowUserToResizeRows = false;
+            this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDatos.BackgroundColor = System.Drawing.Color.White;
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatos.Location = new System.Drawing.Point(12, 66);
+            this.dgvDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1});
+            this.dgvDatos.Location = new System.Drawing.Point(12, 54);
             this.dgvDatos.Name = "dgvDatos";
-            this.dgvDatos.Size = new System.Drawing.Size(277, 150);
+            this.dgvDatos.ReadOnly = true;
+            this.dgvDatos.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dgvDatos.RowHeadersWidth = 60;
+            this.dgvDatos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvDatos.Size = new System.Drawing.Size(277, 281);
             this.dgvDatos.TabIndex = 2;
             // 
             // btnBuscar
@@ -169,15 +195,12 @@
             this.lblPosicion.TabIndex = 0;
             this.lblPosicion.Text = "K = ";
             // 
-            // lblPruebaFibonacci
+            // Column1
             // 
-            this.lblPruebaFibonacci.AutoSize = true;
-            this.lblPruebaFibonacci.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPruebaFibonacci.Location = new System.Drawing.Point(120, 21);
-            this.lblPruebaFibonacci.Name = "lblPruebaFibonacci";
-            this.lblPruebaFibonacci.Size = new System.Drawing.Size(172, 19);
-            this.lblPruebaFibonacci.TabIndex = 1;
-            this.lblPruebaFibonacci.Text = "Prueba de Fibonacci";
+            this.Column1.HeaderText = "Números";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // frmPruebaDeFibonacci
             // 
@@ -220,5 +243,6 @@
         private System.Windows.Forms.Panel pnlInfo;
         private System.Windows.Forms.PictureBox pbxFoto;
         private System.Windows.Forms.Label lblPruebaFibonacci;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

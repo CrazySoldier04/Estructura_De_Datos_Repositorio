@@ -16,7 +16,7 @@ namespace Estructura_De_Datos_Proyecto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPruebaDeFibonacci());
+            Application.Run(new frmFractalDeHilbert());
         }
     }
 }

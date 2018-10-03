@@ -64,6 +64,12 @@
     <Compile Include="frmDatos.Designer.cs">
       <DependentUpon>frmDatos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFractalDeHilbert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFractalDeHilbert.Designer.cs">
+      <DependentUpon>frmFractalDeHilbert.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMCD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDatos.resx">
       <DependentUpon>frmDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFractalDeHilbert.resx">
+      <DependentUpon>frmFractalDeHilbert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMCD.resx">
       <DependentUpon>frmMCD.cs</DependentUpon>
