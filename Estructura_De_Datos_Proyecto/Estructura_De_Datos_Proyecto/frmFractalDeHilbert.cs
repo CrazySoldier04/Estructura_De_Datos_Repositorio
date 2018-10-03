@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Drawing.Imaging;
 using System.Windows.Forms;
 
 namespace Estructura_De_Datos_Proyecto
@@ -20,8 +22,8 @@ namespace Estructura_De_Datos_Proyecto
         private bool DoRefresh;
         private float LastX, LastY;
         private Bitmap HilbertImage;
-        String path;
         String ext;
+        ImageFormat formato;
         private void btnGo_Click(object sender, EventArgs e)
         {
             int depth = int.Parse(txtDepth.Text);
@@ -98,11 +100,25 @@ namespace Estructura_De_Datos_Proyecto
 
             if(saveFileDialog1.FileName != "")
             {
+                Image imagen = pictureBox1.Image;
                 System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
-                path = System.IO.Path.GetFileName(saveFileDialog1.FileName);
                 ext = System.IO.Path.GetExtension(saveFileDialog1.FileName);
+                switch (ext)
+                {
+                    case ".png":
+                        formato = ImageFormat.Png;
+                        break;
+
+                    case ".bmp":
+                        formato = ImageFormat.Bmp;
+                        break;
+
+                    case ".jpeg":
+                        formato = ImageFormat.Jpeg;
+                        break;
+                }
+                imagen.Save(fs, formato);
             }
-            pictureBox1.Image.Save(path);
         }
 
         private void pbxCerrar_Click(object sender, EventArgs e)
