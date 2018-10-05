@@ -70,6 +70,12 @@
     <Compile Include="frmFractalDeHilbert.Designer.cs">
       <DependentUpon>frmFractalDeHilbert.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmIngresarMatriz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngresarMatriz.Designer.cs">
+      <DependentUpon>frmIngresarMatriz.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMCD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     <Compile Include="frmSeleccionarDatos.Designer.cs">
       <DependentUpon>frmSeleccionarDatos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSumaDeMatrices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSumaDeMatrices.Designer.cs">
+      <DependentUpon>frmSumaDeMatrices.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTipoDeDato.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +133,9 @@
     <EmbeddedResource Include="frmFractalDeHilbert.resx">
       <DependentUpon>frmFractalDeHilbert.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmIngresarMatriz.resx">
+      <DependentUpon>frmIngresarMatriz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMCD.resx">
       <DependentUpon>frmMCD.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSeleccionarDatos.resx">
       <DependentUpon>frmSeleccionarDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSumaDeMatrices.resx">
+      <DependentUpon>frmSumaDeMatrices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTipoDeDato.resx">
       <DependentUpon>frmTipoDeDato.cs</DependentUpon>

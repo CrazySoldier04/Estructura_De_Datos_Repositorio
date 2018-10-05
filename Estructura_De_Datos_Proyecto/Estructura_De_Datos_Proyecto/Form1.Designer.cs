@@ -45,6 +45,12 @@
             this.unidadIIArreglosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidadIIIListasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContenido = new System.Windows.Forms.Panel();
+            this.métodosDeOrdenamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sumaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inversaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transpuestaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cuadradoMágicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.memoramaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
             this.pnlBarra.SuspendLayout();
@@ -91,7 +97,7 @@
             this.pnlBarra.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBarra.Location = new System.Drawing.Point(0, 29);
             this.pnlBarra.Name = "pnlBarra";
-            this.pnlBarra.Size = new System.Drawing.Size(611, 26);
+            this.pnlBarra.Size = new System.Drawing.Size(611, 29);
             this.pnlBarra.TabIndex = 1;
             // 
             // menuStrip1
@@ -128,8 +134,9 @@
             // practicaIToolStripMenuItem
             // 
             this.practicaIToolStripMenuItem.Name = "practicaIToolStripMenuItem";
-            this.practicaIToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
+            this.practicaIToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.practicaIToolStripMenuItem.Text = "Practica I";
+            this.practicaIToolStripMenuItem.Click += new System.EventHandler(this.practicaIToolStripMenuItem_Click);
             // 
             // recursividadToolStripMenuItem
             // 
@@ -148,33 +155,45 @@
             this.fibonacciToolStripMenuItem.Name = "fibonacciToolStripMenuItem";
             this.fibonacciToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.fibonacciToolStripMenuItem.Text = "Fibonacci";
+            this.fibonacciToolStripMenuItem.Click += new System.EventHandler(this.fibonacciToolStripMenuItem_Click);
             // 
             // mCDToolStripMenuItem
             // 
             this.mCDToolStripMenuItem.Name = "mCDToolStripMenuItem";
             this.mCDToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.mCDToolStripMenuItem.Text = "MCD";
+            this.mCDToolStripMenuItem.Click += new System.EventHandler(this.mCDToolStripMenuItem_Click);
             // 
             // búsquedaBinariaToolStripMenuItem
             // 
             this.búsquedaBinariaToolStripMenuItem.Name = "búsquedaBinariaToolStripMenuItem";
             this.búsquedaBinariaToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.búsquedaBinariaToolStripMenuItem.Text = "Búsqueda binaria";
+            this.búsquedaBinariaToolStripMenuItem.Click += new System.EventHandler(this.búsquedaBinariaToolStripMenuItem_Click);
             // 
             // pruebaDeFibonacciToolStripMenuItem
             // 
             this.pruebaDeFibonacciToolStripMenuItem.Name = "pruebaDeFibonacciToolStripMenuItem";
             this.pruebaDeFibonacciToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.pruebaDeFibonacciToolStripMenuItem.Text = "Prueba de Fibonacci";
+            this.pruebaDeFibonacciToolStripMenuItem.Click += new System.EventHandler(this.pruebaDeFibonacciToolStripMenuItem_Click);
             // 
             // fractalDeHilbertToolStripMenuItem
             // 
             this.fractalDeHilbertToolStripMenuItem.Name = "fractalDeHilbertToolStripMenuItem";
             this.fractalDeHilbertToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.fractalDeHilbertToolStripMenuItem.Text = "Fractal de Hilbert";
+            this.fractalDeHilbertToolStripMenuItem.Click += new System.EventHandler(this.fractalDeHilbertToolStripMenuItem_Click);
             // 
             // unidadIIArreglosToolStripMenuItem
             // 
+            this.unidadIIArreglosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.métodosDeOrdenamientoToolStripMenuItem,
+            this.sumaToolStripMenuItem,
+            this.inversaToolStripMenuItem,
+            this.transpuestaToolStripMenuItem,
+            this.cuadradoMágicoToolStripMenuItem,
+            this.memoramaToolStripMenuItem});
             this.unidadIIArreglosToolStripMenuItem.Name = "unidadIIArreglosToolStripMenuItem";
             this.unidadIIArreglosToolStripMenuItem.Size = new System.Drawing.Size(164, 25);
             this.unidadIIArreglosToolStripMenuItem.Text = "Unidad II: Arreglos";
@@ -189,10 +208,46 @@
             // 
             this.pnlContenido.BackColor = System.Drawing.SystemColors.Menu;
             this.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContenido.Location = new System.Drawing.Point(0, 55);
+            this.pnlContenido.Location = new System.Drawing.Point(0, 58);
             this.pnlContenido.Name = "pnlContenido";
-            this.pnlContenido.Size = new System.Drawing.Size(611, 327);
+            this.pnlContenido.Size = new System.Drawing.Size(611, 324);
             this.pnlContenido.TabIndex = 2;
+            // 
+            // métodosDeOrdenamientoToolStripMenuItem
+            // 
+            this.métodosDeOrdenamientoToolStripMenuItem.Name = "métodosDeOrdenamientoToolStripMenuItem";
+            this.métodosDeOrdenamientoToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
+            this.métodosDeOrdenamientoToolStripMenuItem.Text = "Métodos de ordenamiento";
+            // 
+            // sumaToolStripMenuItem
+            // 
+            this.sumaToolStripMenuItem.Name = "sumaToolStripMenuItem";
+            this.sumaToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
+            this.sumaToolStripMenuItem.Text = "Suma";
+            // 
+            // inversaToolStripMenuItem
+            // 
+            this.inversaToolStripMenuItem.Name = "inversaToolStripMenuItem";
+            this.inversaToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
+            this.inversaToolStripMenuItem.Text = "Inversa";
+            // 
+            // transpuestaToolStripMenuItem
+            // 
+            this.transpuestaToolStripMenuItem.Name = "transpuestaToolStripMenuItem";
+            this.transpuestaToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
+            this.transpuestaToolStripMenuItem.Text = "Transpuesta";
+            // 
+            // cuadradoMágicoToolStripMenuItem
+            // 
+            this.cuadradoMágicoToolStripMenuItem.Name = "cuadradoMágicoToolStripMenuItem";
+            this.cuadradoMágicoToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
+            this.cuadradoMágicoToolStripMenuItem.Text = "Cuadrado mágico";
+            // 
+            // memoramaToolStripMenuItem
+            // 
+            this.memoramaToolStripMenuItem.Name = "memoramaToolStripMenuItem";
+            this.memoramaToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
+            this.memoramaToolStripMenuItem.Text = "Memorama";
             // 
             // frmInicio
             // 
@@ -239,6 +294,12 @@
         private System.Windows.Forms.ToolStripMenuItem unidadIIArreglosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem unidadIIIListasToolStripMenuItem;
         private System.Windows.Forms.PictureBox pbxCerrar;
+        private System.Windows.Forms.ToolStripMenuItem métodosDeOrdenamientoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sumaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inversaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem transpuestaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cuadradoMágicoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem memoramaToolStripMenuItem;
     }
 }
 
