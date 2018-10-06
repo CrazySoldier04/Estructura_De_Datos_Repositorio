@@ -16,5 +16,11 @@ namespace Estructura_De_Datos_Proyecto
             reg = new Regex("[0-9]$");
             return reg.IsMatch(campo);
         }
+
+        public static bool NumerosReales(String campo)
+        {
+            reg = new Regex(@"[0-9]$");
+            return reg.IsMatch(campo);
+        }
     }
 }

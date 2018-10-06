@@ -24,6 +24,9 @@ namespace Estructura_De_Datos_Proyecto
             this.ren = ren;
         }
 
+        private int col = 0;
+        private int ren = 0;
+
         private void GenerarRenglonesYColumnas()
         {
             try
@@ -63,17 +66,17 @@ namespace Estructura_De_Datos_Proyecto
                 {
                     for (int i = 0; i < ren; i++)
                     {
-                        ran = random.Next(Convert.ToInt32(txtLimiteInferior.Text), Convert.ToInt32(txtLimiteSuperior.Text));
                         for (int j = 0; j < col; j++)
                         {
+                            ran = random.Next(Convert.ToInt32(txtLimiteInferior.Text), Convert.ToInt32(txtLimiteSuperior.Text));
                             dgvMatriz1.Rows[i].Cells[j].Value = ran.ToString();
                         }
                     }
                     for (int i = 0; i < ren; i++)
                     {
-                        ran = random.Next(Convert.ToInt32(txtLimiteInferior.Text), Convert.ToInt32(txtLimiteSuperior.Text));
                         for (int j = 0; j < col; j++)
                         {
+                            ran = random.Next(Convert.ToInt32(txtLimiteInferior.Text), Convert.ToInt32(txtLimiteSuperior.Text));
                             dgvMatriz2.Rows[i].Cells[j].Value = ran.ToString();
                         }
                     }
@@ -97,9 +100,6 @@ namespace Estructura_De_Datos_Proyecto
             }
         }
 
-        private int col = 0;
-        private int ren = 0;
-
         private void frmSumaDeMatrices_Load(object sender, EventArgs e)
         {
             GenerarRenglonesYColumnas();
@@ -117,7 +117,7 @@ namespace Estructura_De_Datos_Proyecto
 
         private void txtLimiteInferior_TextChanged(object sender, EventArgs e)
         {
-            if (!RegularExpressions.NumerosEnteros(txtLimiteInferior.Text))
+            if (!RegularExpressions.NumerosReales(txtLimiteInferior.Text))
             {
                 txtLimiteInferior.Clear();
                 txtLimiteInferior.Focus();
@@ -135,15 +135,10 @@ namespace Estructura_De_Datos_Proyecto
 
         private void dgvMatriz2_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-
-        }
-
-        private void dgvMatriz2_CellLeave(object sender, DataGridViewCellEventArgs e)
-        {
-            //if (!RegularExpressions.NumerosEnteros(dgvMatriz1.CurrentRow.Cells[e.RowIndex].Value.ToString()))
-            //{
-            //    MessageBox.Show("Mierda");
-            //}
+            if (!RegularExpressions.NumerosEnteros(dgvMatriz1.CurrentRow.Cells[e.RowIndex].Value.ToString()))
+            {
+                MessageBox.Show("Mierda");
+            }
         }
 
         private void btnSuma_Click(object sender, EventArgs e)
