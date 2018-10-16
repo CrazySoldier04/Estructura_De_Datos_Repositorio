@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -57,6 +58,12 @@
     </Compile>
     <Compile Include="frmBusquedaBinaria.Designer.cs">
       <DependentUpon>frmBusquedaBinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCuadradoMagico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCuadradoMagico.Designer.cs">
+      <DependentUpon>frmCuadradoMagico.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDatos.cs">
       <SubType>Form</SubType>
@@ -126,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBusquedaBinaria.resx">
       <DependentUpon>frmBusquedaBinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCuadradoMagico.resx">
+      <DependentUpon>frmCuadradoMagico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDatos.resx">
       <DependentUpon>frmDatos.cs</DependentUpon>
@@ -227,6 +237,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\f0801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\índice.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

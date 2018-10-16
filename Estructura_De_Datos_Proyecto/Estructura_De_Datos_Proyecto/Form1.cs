@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace Estructura_De_Datos_Proyecto
 {
@@ -63,6 +64,22 @@ namespace Estructura_De_Datos_Proyecto
             this.Hide();
             ventana.ShowDialog();
             this.Show();
+        }
+
+        private void cuadradoMágicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int matriz = Convert.ToInt32(Interaction.InputBox("Número de columnas y renglones", "Matriz"));
+                frmCuadradoMagico ventana = new frmCuadradoMagico(matriz);
+                Hide();
+                ventana.ShowDialog();
+                Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Favor de introducir valores numericos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+            }
         }
     }
 }

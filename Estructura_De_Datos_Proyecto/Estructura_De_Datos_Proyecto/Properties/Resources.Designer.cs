@@ -193,6 +193,16 @@ namespace Estructura_De_Datos_Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap índice {
+            get {
+                object obj = ResourceManager.GetObject("índice", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reverso {
             get {
                 object obj = ResourceManager.GetObject("reverso", resourceCulture);

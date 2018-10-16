@@ -43,14 +43,14 @@
             this.pruebaDeFibonacciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fractalDeHilbertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidadIIArreglosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unidadIIIListasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnlContenido = new System.Windows.Forms.Panel();
             this.métodosDeOrdenamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sumaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inversaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transpuestaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cuadradoMágicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memoramaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unidadIIIListasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pnlContenido = new System.Windows.Forms.Panel();
             this.pnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
             this.pnlBarra.SuspendLayout();
@@ -134,7 +134,7 @@
             // practicaIToolStripMenuItem
             // 
             this.practicaIToolStripMenuItem.Name = "practicaIToolStripMenuItem";
-            this.practicaIToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.practicaIToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
             this.practicaIToolStripMenuItem.Text = "Practica I";
             this.practicaIToolStripMenuItem.Click += new System.EventHandler(this.practicaIToolStripMenuItem_Click);
             // 
@@ -198,21 +198,6 @@
             this.unidadIIArreglosToolStripMenuItem.Size = new System.Drawing.Size(164, 25);
             this.unidadIIArreglosToolStripMenuItem.Text = "Unidad II: Arreglos";
             // 
-            // unidadIIIListasToolStripMenuItem
-            // 
-            this.unidadIIIListasToolStripMenuItem.Name = "unidadIIIListasToolStripMenuItem";
-            this.unidadIIIListasToolStripMenuItem.Size = new System.Drawing.Size(146, 25);
-            this.unidadIIIListasToolStripMenuItem.Text = "Unidad III: Listas";
-            // 
-            // pnlContenido
-            // 
-            this.pnlContenido.BackColor = System.Drawing.SystemColors.Menu;
-            this.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContenido.Location = new System.Drawing.Point(0, 58);
-            this.pnlContenido.Name = "pnlContenido";
-            this.pnlContenido.Size = new System.Drawing.Size(611, 324);
-            this.pnlContenido.TabIndex = 2;
-            // 
             // métodosDeOrdenamientoToolStripMenuItem
             // 
             this.métodosDeOrdenamientoToolStripMenuItem.Name = "métodosDeOrdenamientoToolStripMenuItem";
@@ -242,12 +227,28 @@
             this.cuadradoMágicoToolStripMenuItem.Name = "cuadradoMágicoToolStripMenuItem";
             this.cuadradoMágicoToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
             this.cuadradoMágicoToolStripMenuItem.Text = "Cuadrado mágico";
+            this.cuadradoMágicoToolStripMenuItem.Click += new System.EventHandler(this.cuadradoMágicoToolStripMenuItem_Click);
             // 
             // memoramaToolStripMenuItem
             // 
             this.memoramaToolStripMenuItem.Name = "memoramaToolStripMenuItem";
             this.memoramaToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
             this.memoramaToolStripMenuItem.Text = "Memorama";
+            // 
+            // unidadIIIListasToolStripMenuItem
+            // 
+            this.unidadIIIListasToolStripMenuItem.Name = "unidadIIIListasToolStripMenuItem";
+            this.unidadIIIListasToolStripMenuItem.Size = new System.Drawing.Size(146, 25);
+            this.unidadIIIListasToolStripMenuItem.Text = "Unidad III: Listas";
+            // 
+            // pnlContenido
+            // 
+            this.pnlContenido.BackColor = System.Drawing.SystemColors.Menu;
+            this.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContenido.Location = new System.Drawing.Point(0, 58);
+            this.pnlContenido.Name = "pnlContenido";
+            this.pnlContenido.Size = new System.Drawing.Size(611, 324);
+            this.pnlContenido.TabIndex = 2;
             // 
             // frmInicio
             // 
