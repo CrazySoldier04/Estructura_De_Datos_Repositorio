@@ -83,6 +83,12 @@
     <Compile Include="frmIngresarMatriz.Designer.cs">
       <DependentUpon>frmIngresarMatriz.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMatrizCuadradoMagico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMatrizCuadradoMagico.Designer.cs">
+      <DependentUpon>frmMatrizCuadradoMagico.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMCD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmIngresarMatriz.resx">
       <DependentUpon>frmIngresarMatriz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMatrizCuadradoMagico.resx">
+      <DependentUpon>frmMatrizCuadradoMagico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMCD.resx">
       <DependentUpon>frmMCD.cs</DependentUpon>

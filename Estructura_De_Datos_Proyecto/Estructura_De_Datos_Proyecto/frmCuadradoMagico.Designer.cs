@@ -32,10 +32,13 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pnlContenido = new System.Windows.Forms.Panel();
             this.dgvCuadrado = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnEjemplo1 = new System.Windows.Forms.Button();
             this.pbxEjemplo = new System.Windows.Forms.PictureBox();
             this.pbxCerrar = new System.Windows.Forms.PictureBox();
+            this.btnEjemplo2 = new System.Windows.Forms.Button();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.lblCuadrado = new System.Windows.Forms.Label();
             this.pnlTitulo.SuspendLayout();
             this.pnlContenido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCuadrado)).BeginInit();
@@ -51,7 +54,7 @@
             this.pnlTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitulo.Location = new System.Drawing.Point(0, 0);
             this.pnlTitulo.Name = "pnlTitulo";
-            this.pnlTitulo.Size = new System.Drawing.Size(935, 36);
+            this.pnlTitulo.Size = new System.Drawing.Size(753, 36);
             this.pnlTitulo.TabIndex = 0;
             // 
             // lblTitulo
@@ -68,16 +71,20 @@
             // 
             // pnlContenido
             // 
-            this.pnlContenido.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.pnlContenido.BackColor = System.Drawing.SystemColors.GrayText;
             this.pnlContenido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlContenido.Controls.Add(this.lblCuadrado);
+            this.pnlContenido.Controls.Add(this.btnLimpiar);
+            this.pnlContenido.Controls.Add(this.btnCalcular);
+            this.pnlContenido.Controls.Add(this.btnEjemplo2);
             this.pnlContenido.Controls.Add(this.pbxEjemplo);
             this.pnlContenido.Controls.Add(this.btnEjemplo1);
-            this.pnlContenido.Controls.Add(this.label2);
             this.pnlContenido.Controls.Add(this.dgvCuadrado);
             this.pnlContenido.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContenido.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlContenido.Location = new System.Drawing.Point(0, 36);
             this.pnlContenido.Name = "pnlContenido";
-            this.pnlContenido.Size = new System.Drawing.Size(935, 393);
+            this.pnlContenido.Size = new System.Drawing.Size(753, 357);
             this.pnlContenido.TabIndex = 1;
             // 
             // dgvCuadrado
@@ -90,39 +97,37 @@
             this.dgvCuadrado.BackgroundColor = System.Drawing.Color.White;
             this.dgvCuadrado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCuadrado.GridColor = System.Drawing.Color.Black;
-            this.dgvCuadrado.Location = new System.Drawing.Point(110, 15);
+            this.dgvCuadrado.Location = new System.Drawing.Point(6, 5);
             this.dgvCuadrado.Name = "dgvCuadrado";
-            this.dgvCuadrado.RowHeadersWidth = 50;
-            this.dgvCuadrado.Size = new System.Drawing.Size(363, 283);
+            this.dgvCuadrado.RowHeadersWidth = 60;
+            this.dgvCuadrado.Size = new System.Drawing.Size(499, 283);
             this.dgvCuadrado.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.dgvCuadrado.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCuadrado_CellEndEdit);
+            this.dgvCuadrado.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCuadrado_CellLeave);
             // 
             // btnEjemplo1
             // 
-            this.btnEjemplo1.Location = new System.Drawing.Point(110, 304);
+            this.btnEjemplo1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnEjemplo1.FlatAppearance.BorderSize = 0;
+            this.btnEjemplo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEjemplo1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEjemplo1.Location = new System.Drawing.Point(181, 304);
             this.btnEjemplo1.Name = "btnEjemplo1";
-            this.btnEjemplo1.Size = new System.Drawing.Size(155, 58);
+            this.btnEjemplo1.Size = new System.Drawing.Size(155, 37);
             this.btnEjemplo1.TabIndex = 2;
             this.btnEjemplo1.Text = "Ejemplo 1";
-            this.btnEjemplo1.UseVisualStyleBackColor = true;
+            this.btnEjemplo1.UseVisualStyleBackColor = false;
             this.btnEjemplo1.Click += new System.EventHandler(this.btnEjemplo1_Click);
             // 
             // pbxEjemplo
             // 
+            this.pbxEjemplo.BackColor = System.Drawing.Color.Transparent;
             this.pbxEjemplo.BackgroundImage = global::Estructura_De_Datos_Proyecto.Properties.Resources.índice;
             this.pbxEjemplo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pbxEjemplo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbxEjemplo.Location = new System.Drawing.Point(683, 15);
+            this.pbxEjemplo.Location = new System.Drawing.Point(511, 4);
             this.pbxEjemplo.Name = "pbxEjemplo";
-            this.pbxEjemplo.Size = new System.Drawing.Size(239, 223);
+            this.pbxEjemplo.Size = new System.Drawing.Size(237, 218);
             this.pbxEjemplo.TabIndex = 3;
             this.pbxEjemplo.TabStop = false;
             // 
@@ -132,18 +137,70 @@
             this.pbxCerrar.BackColor = System.Drawing.Color.Transparent;
             this.pbxCerrar.BackgroundImage = global::Estructura_De_Datos_Proyecto.Properties.Resources.Windows_Close_Program_22531;
             this.pbxCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxCerrar.Location = new System.Drawing.Point(899, 0);
+            this.pbxCerrar.Location = new System.Drawing.Point(717, 0);
             this.pbxCerrar.Name = "pbxCerrar";
             this.pbxCerrar.Size = new System.Drawing.Size(36, 36);
             this.pbxCerrar.TabIndex = 1;
             this.pbxCerrar.TabStop = false;
             this.pbxCerrar.Click += new System.EventHandler(this.pbxCerrar_Click);
             // 
+            // btnEjemplo2
+            // 
+            this.btnEjemplo2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnEjemplo2.FlatAppearance.BorderSize = 0;
+            this.btnEjemplo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEjemplo2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEjemplo2.Location = new System.Drawing.Point(350, 304);
+            this.btnEjemplo2.Name = "btnEjemplo2";
+            this.btnEjemplo2.Size = new System.Drawing.Size(155, 37);
+            this.btnEjemplo2.TabIndex = 4;
+            this.btnEjemplo2.Text = "Ejemplo 2";
+            this.btnEjemplo2.UseVisualStyleBackColor = false;
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnCalcular.FlatAppearance.BorderSize = 0;
+            this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcular.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(11, 304);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(155, 37);
+            this.btnCalcular.TabIndex = 5;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.White;
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(521, 304);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(155, 37);
+            this.btnLimpiar.TabIndex = 6;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            // 
+            // lblCuadrado
+            // 
+            this.lblCuadrado.AutoSize = true;
+            this.lblCuadrado.BackColor = System.Drawing.Color.Transparent;
+            this.lblCuadrado.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCuadrado.ForeColor = System.Drawing.Color.White;
+            this.lblCuadrado.Location = new System.Drawing.Point(557, 225);
+            this.lblCuadrado.Name = "lblCuadrado";
+            this.lblCuadrado.Size = new System.Drawing.Size(146, 18);
+            this.lblCuadrado.TabIndex = 7;
+            this.lblCuadrado.Text = "Cuadrado mágico";
+            // 
             // frmCuadradoMagico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 429);
+            this.ClientSize = new System.Drawing.Size(753, 393);
             this.Controls.Add(this.pnlContenido);
             this.Controls.Add(this.pnlTitulo);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -171,8 +228,11 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Panel pnlContenido;
         private System.Windows.Forms.DataGridView dgvCuadrado;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnEjemplo1;
         private System.Windows.Forms.PictureBox pbxEjemplo;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Button btnEjemplo2;
+        private System.Windows.Forms.Label lblCuadrado;
     }
 }

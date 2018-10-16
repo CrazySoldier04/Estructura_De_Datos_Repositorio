@@ -68,18 +68,10 @@ namespace Estructura_De_Datos_Proyecto
 
         private void cuadradoMágicoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                int matriz = Convert.ToInt32(Interaction.InputBox("Número de columnas y renglones", "Matriz"));
-                frmCuadradoMagico ventana = new frmCuadradoMagico(matriz);
-                Hide();
-                ventana.ShowDialog();
-                Show();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Favor de introducir valores numericos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-            }
+            frmMatrizCuadradoMagico ventana = new frmMatrizCuadradoMagico();
+            Hide();
+            ventana.ShowDialog();
+            Show();
         }
     }
 }

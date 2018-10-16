@@ -92,6 +92,11 @@ namespace Estructura_De_Datos_Proyecto
             }
 }
 
+        private void Ejemplo1()
+        {
+
+        }
+
         private void pbxCerrar_Click(object sender, EventArgs e)
         {
             Close();
@@ -103,6 +108,27 @@ namespace Estructura_De_Datos_Proyecto
         }
 
         private void btnEjemplo1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvCuadrado_CellLeave(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvCuadrado_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            if (!RegularExpressions.NumerosEnteros(dgvCuadrado.CurrentRow.Cells[e.ColumnIndex].Value.ToString()))
+            {
+                dgvCuadrado.CurrentRow.Cells[e.ColumnIndex].Selected = true;
+                dgvCuadrado.BeginEdit(true);
+                dgvCuadrado.CurrentRow.Cells[e.ColumnIndex].Value = "";
+                //MessageBox.Show("caca");
+            }
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
         {
             SumarRenglones();
             SumarColumnas();
