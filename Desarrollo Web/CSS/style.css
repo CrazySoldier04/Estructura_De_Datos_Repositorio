@@ -1,0 +1,9 @@
+body
+{
+	background-color: #000000; /*Color del fondo de la página.*/
+	background-image: url("cerveza.png"); /*Imagen de fondo de la página.*/
+	background-attachment: fixed; /*No se mueve la imagen de fondo, solo el contenido*/
+	background-position: center; /*Posición de la imagen de fondo*/
+	background-repeat: no-repeat; /*No repite la imagen la deja como una sola*/
+	color: #FFFFFF;
+}
