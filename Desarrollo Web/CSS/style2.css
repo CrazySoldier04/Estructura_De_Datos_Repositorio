@@ -1,6 +1,36 @@
 button
 {
-	border-radius: 100px;
+    background-color: #FFFFFF; /* Green */
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 4px;
+	width: 10%;
+	background-image: linear-gradient(#FFFFFF, #CACACA);
+}
+
+p
+{
+	color: white;
+	font-size: 26px;
+}
+
+input[type=text], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	background-color: #000096;
+	
 }
 
 .button
@@ -46,4 +76,9 @@ button
 html
 {
 	height: 100%;
+}
+
+footer
+{
+	background-color: #000096;
 }
