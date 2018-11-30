@@ -119,3 +119,10 @@ footer
 {
 	border-bottom: 1px solid #ddd;
 }
+
+text
+{
+	color: white;
+	font-size: 30px;
+	text-align: left;
+}
