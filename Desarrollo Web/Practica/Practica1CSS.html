@@ -5,48 +5,49 @@
 	<link rel="stylesheet" type="text/css" href="../CSS/style2.css">
 </head>
 <body class="Gradiente">
-	<div>
-	<div id="Image_Container">
-		<img src="../Img/logo_banamex.png" width="20%")>
-	</div> <!-- End of Div de Img Container -->
-	<div id="Paragraph_Container">
-		<p for="fname">Teclee su número secreto</p>
-	  <form>
-			<input type="text" id="txtNumero" name="Numero_Secreto" maxlength="4">
+	<div id="Container">
+		<div id="Image_Container">
+			<img src="../Img/logo_banamex.png" width="35%")>
+		</div> <!-- End of Div de Img Container -->
+		<div id="Paragraph_Container">
+			<p for="fname">Teclee su número secreto</p>
+		<form>
+			<input type="password" id="txtNumero" name="Numero_Secreto" maxlength="4">
 		</form>
-	</div> <!-- End of Paragraph Container -->
-	<div align="center">
-		<table>
-			<tr>
-				<td><button class="button">1</button></td>
-				<td><button class="button">2</button></td>
-				<td><button class="button">3</button></td>
-			</tr>
-			<tr>
-				<td><button class="button">4</button></td>
-				<td><button class="button">5</button></td>
-				<td><button class="button">6</button></td>
-			</tr>
-			<tr>
-				<td><button class="button">7</button></td>
-				<td><button class="button">8</button></td>
-				<td><button class="button">9</button></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><button class="button">0</button></td>
-				<td><button class="button">Borrar</button></td>
-			</tr>
-			</table>
-	</div> <!-- Div de <table> -->
-	<div>
-		<button class="BotonRedondo">Borrar todo</button>
-		<button class="BotonRedondo">Aceptar</button>
-	</div> <!-- Div de buttons> -->
-	</div> <!-- Div interfaz -->
-	<div>
-		<footer>
-		</footer>
-	</div> <!-- Div de <footer> -->
+		</div> <!-- End of Paragraph Container -->
+		<div id="Buttons_Container">
+			<table class="Tablita" id="Buttons_Table" border="1">
+				<tr>
+					<td><button>1</button></td>
+					<td><button>2</button></td>
+					<td><button>3</button></td>
+				</tr>
+				<tr>
+					<td><button>4</button></td>
+					<td><button>5</button></td>
+					<td><button>6</button></td>
+				</tr>
+				<tr>
+					<td><button>7</button></td>
+					<td><button>8</button></td>
+					<td><button>9</button></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><button>0</button></td>
+					<td><button>Borrar</button></td>
+				</tr>
+			</table> <!-- End of Buttons Table -->
+		</div> <!-- End of Buttons Container -->
+		<div id="Options_Container">
+			<button class="BotonRedondo">Borrar todo</button>
+			<button class="BotonRedondo" type="submit">Aceptar</button>
+		</div> <!-- End of Options Container -->
+	</div> <!-- End of Main Container -->
+	<div id="Footer_Container">
+		<footer id="Footer">
+			<br><br><br>
+		</footer> <!-- End of Footer Tag -->
+	</div> <!-- End of Footer Container -->
 </body>
 </html>

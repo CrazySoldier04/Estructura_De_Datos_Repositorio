@@ -15,29 +15,33 @@
 		<br>
 		<br>
 		<p class="puto">Seleccione la opción deseada tocando la pantalla</p>
-		<table>
-			<tr>
-				<td></td>
-				<td><button class="BotonRedondo" type="submit">Retiro de efectivo</button></td>
-				<td><button class="BotonRedondo">Transferencias y pagos</button></td>
-			</tr>
-			<tr>
-				<td><button class="BotonRedondo">Consultas</button></td>
-				<td><button class="BotonRedondo">Tus ofertas Banamex</button>
-				<td><button class="BotonRedondo">Otros servicios</button></td>
-			</tr>
+		<table id="Buttons_Table">
+			<form id="Buttons_Form">
+				<tr>
+					<td></td>
+					<td><button class="BotonRedondo" type="submit" value="Retiro_de_efectivo" formaction="./Practica8CSS.html" formmethod="post">Retiro de efectivo</button></td>
+					<td><button class="BotonRedondo" type="submit" value="Transferencias_y_pagos">Transferencias y pagos</button></td>
+				</tr>
+				<tr>
+					<td><button class="BotonRedondo" name="ButtonConsultas" type="submit" value="Consultas" formaction="./Practica5CSS.html" formmethod="post">Consultas</button></td>
+					<td><button class="BotonRedondo" type="submit" value="Tus_ofertas_banamex">Tus ofertas Banamex</button></td>
+					<td><button class="BotonRedondo" type="submit" value="Otros_servicios">Otros servicios</button></td>
+				</tr>
+			</form> <!-- End of Buttons Form -->
 		</table> <!-- End Table Tag -->
 	</div> <!-- End buttons container -->
 	</div><!-- End of main container -->
-	<div>
+	<div id="Footer_Container">
 		<footer id="Footer">
-			<div id="Footer_Container" align="right">
-				<br>
-				<button>Salir</button>
-				<br>
-				<br>
-			</div>
-		</footer>
-	</div> <!-- End Footer Div -->
+			<div id="Salir_Container" align="right">
+				<form id="Salir_Form" method="post">
+					<br>
+					<button id="btnSalir" class="BtnSalir" type="submit" name="ButtonSalir" value="Salir" formaction="" formmethod="post">Salir</button>
+					<br>
+					<br>
+				</form> <!-- End of Salir Form -->
+			</div> <!-- End of Salir Container -->
+		</footer> <!-- End of Footer tag -->
+	</div> <!-- End Footer Container -->
 </body>
 </html>

@@ -18,21 +18,25 @@
 					<td colspan="2"><p align="right">Selecciona la opción deseada</p></td>
 				</tr>
 				<tr>
-					<td><button id="btnSaldo" class="BotonRedondo">Consulta de saldo</button></td>
-					<td><button id="btnMovimientos" class="BotonRedondo">Consulta de movimientos</button></td>
+					<form id="Buttons_Form">
+						<td><button id="btnSaldo" class="BotonRedondo" name="ButtonConsultaDeSaldo" type="submit" formaction="./Practica7CSS.html" formmethod="post">Consulta de saldo</button></td>
+						<td><button id="btnMovimientos" class="BotonRedondo">Consulta de movimientos</button></td>
+					</form> <!-- End of Buttons Form -->
 				</tr>
-			</table>
+			</table> <!-- End of Options Table -->
 		</div> <!-- End of Options Container -->
+	</div> <!-- End of Main Container -->
 		<div id="Footer_Container">
 			<footer id="Footer">
 				<div id="Salir_Container" align="right">
-					<br>
-					<button id="btnSalir">Salir</button>
-					<br>
-					<br>
+					<form id="Salir_Form">
+						<br>
+						<button id="btnSalir" class="BtnSalir" type="submit" name="BotonSalir" value="Salir" formaction="./Practica2CSS.html" formmethod="post">Salir</button>
+						<br>
+						<br>
+					</form> <!-- End of Salir Form -->
 				</div> <!-- End of Salir Container -->
-			</footer>
+			</footer> <!-- End of Footer Tag -->
 		</div> <!-- End of Footer Container -->
-	</div> <!-- End of Main Container -->
 </body>
 </html>

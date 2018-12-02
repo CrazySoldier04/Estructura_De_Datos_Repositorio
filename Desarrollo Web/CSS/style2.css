@@ -8,10 +8,10 @@ button
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px;
     cursor: pointer;
-	border-radius: 4px;
-	width: 100;
+	border-radius: 30px;
+	width: 100px;
 	background-image: linear-gradient(#FFFFFF, #CACACA);
 }
 
@@ -50,20 +50,6 @@ input[type=password], select
 	background-color: #000096;
 	text-align: center;
 	font-size: 25px;
-}
-
-.button
-{
-	/*background-color: #cecece;*/
-	background-image: linear-gradient(#FFFFFF, #CACACA);
-    border: none;
-    color: black;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
 }
 
 .claro
