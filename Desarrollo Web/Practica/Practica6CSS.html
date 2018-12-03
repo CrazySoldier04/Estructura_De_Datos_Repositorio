@@ -2,37 +2,41 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Pantalla 6</title>
+	<title>Banamex</title>
 	<link rel="stylesheet" type="text/css" href="../CSS/style2.css">
 </head>
 <body class="Gradiente">
 	<div id="Container">
 		<div id="Image_Container">
 		<br>
-			<img src="../Img/logo_banamex.png" width="20%" id="Logo_Banamex">
+			<img src="../Img/logo_banamex.png" width="35%" id="Logo_Banamex">
 		</div> <!-- End of Image Container -->
 		<div id="Options_Container">
 		<br>
+		<form id="Options_Form">
 			<table id="Options_Table" class="Tablita">
 				<tr>
 					<td colspan="2"><p align="right">Selecciona la opción deseada</p></td>
 				</tr>
 				<tr>
-					<td><button id="btnTransferencias" class="BotonRedondo">Transferencia entre cuentas</button></td>
-					<td><button id="btnPagoTarjetas" class="BotonRedondo">Pago de tarjetas de crédito Banamex</button></td>
+					<td align="right"><button id="btnTransferencias" class="BotonRedondo" type="submit" name="ButtonTransferencias" value="TransferenciasEntreCuentas" formaction="./Practica10CSS.html" formmethod="post">Transferencia entre cuentas</button></td>
+					<td align="center"><button id="btnPagoTarjetas" class="BotonRedondo" type="submit" name="ButtonPagoTarjetas" value="PagoDeTarjetasDeCreditoBanamex" formaction="./Practica10CSS.html" formmethod="post">Pago de tarjetas de crédito Banamex</button></td>
 				</tr>
-				<tr>
-					<td><td><button id="btnPagoServicios" class="BotonRedondo">Pagos de servicios</button></td></td>
+				<tr align="center">
+					<td><td><button id="btnPagoServicios" class="BotonRedondo" type="submit" name="ButtonPagoServicios" value="PagosDeServicios" formaction="./Practica10CSS.html" formmethod="post">Pagos de servicios</button></td></td>
 				</tr>
 			</table> <!-- End of Options Table -->
+		</form> <!-- End of Options Form -->
 		</div> <!-- End of Options Container -->
 		<div id="Footer_Container">
 			<footer id="Footer">
 				<div id="Salir_Container" align="right">
-					<br>
-					<button id="btnSalir">Salir</button>
-					<br>
-					<br>
+					<form id="Salir_Form">
+						<br>
+						<button id="btnSalir" class="BtnSalir" type="submit" name="ButtonSalir" value="Salir" formaction="./Practica2CSS.html" formmethod="post">Salir</button>
+						<br>
+						<br>
+					</form> <!-- End of Salir Form -->
 				</div> <!-- End of Salir Container -->
 			</footer> <!-- End of Footer Tag -->
 		</div> <!-- End of Footer Container -->

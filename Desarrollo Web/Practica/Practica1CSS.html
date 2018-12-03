@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Banamex</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="../CSS/style2.css">
 </head>
@@ -9,44 +10,56 @@
 		<div id="Image_Container">
 			<img src="../Img/logo_banamex.png" width="35%")>
 		</div> <!-- End of Div de Img Container -->
-		<div id="Paragraph_Container">
-			<p for="fname">Teclee su número secreto</p>
-		<form>
-			<input type="password" id="txtNumero" name="Numero_Secreto" maxlength="4">
-		</form>
-		</div> <!-- End of Paragraph Container -->
 		<div id="Buttons_Container">
-			<table class="Tablita" id="Buttons_Table" border="1">
-				<tr>
-					<td><button>1</button></td>
-					<td><button>2</button></td>
-					<td><button>3</button></td>
-				</tr>
-				<tr>
-					<td><button>4</button></td>
-					<td><button>5</button></td>
-					<td><button>6</button></td>
-				</tr>
-				<tr>
-					<td><button>7</button></td>
-					<td><button>8</button></td>
-					<td><button>9</button></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td><button>0</button></td>
-					<td><button>Borrar</button></td>
-				</tr>
-			</table> <!-- End of Buttons Table -->
+			<form id="Buttons_Form">
+				<table class="Tablita" id="Buttons_Table">
+					<tr>
+						<td></td>
+						<td></td>
+						<td><button id="btn1" name="Button1" type="submit" value="1" formaction="" formmethod="post">1</button></td>
+						<td><button>2</button></td>
+						<td><button>3</button></td>
+					</tr>
+					<tr>
+						<td align="center"><p id="Number_Paragraph">Teclee su número secreto</p></td>
+						<td></td>
+						<td><button>4</button></td>
+						<td><button>5</button></td>
+						<td><button>6</button></td>
+					</tr>
+					<tr>
+						<td><form><input type="password" id="txtNumero" name="Numero_Secreto" maxlength="4" style="width:100%;"></form></td>
+						<td></td>
+						<td><button>7</button></td>
+						<td><button>8</button></td>
+						<td><button>9</button></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td></td>
+						<td><button>0</button></td>
+						<td><button>Borrar</button></td>
+					</tr>
+				</table> <!-- End of Buttons Table -->
+			</form> <!-- End of Buttons Form -->
 		</div> <!-- End of Buttons Container -->
 		<div id="Options_Container">
-			<button class="BotonRedondo">Borrar todo</button>
-			<button class="BotonRedondo" type="submit">Aceptar</button>
+		<br>
+			<table id="Options_Table" class="Tablita">
+				<form id="Options_Form">
+					<tr>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td align="right"><button class="BotonRedondo">Borrar todo</button></td>
+						<td align="center"><button class="BotonRedondo" id="btnAceptar" name="ButtonAceptar" type="submit" value="Aceptar" formaction="./Practica2CSS.html" formmethod="post">Aceptar</button></td>
+					</tr>
+				</form> <!-- End of Options Form -->
+			</table> <!-- End of Options Table -->
 		</div> <!-- End of Options Container -->
 	</div> <!-- End of Main Container -->
 	<div id="Footer_Container">
 		<footer id="Footer">
-			<br><br><br>
+			<br><br><br><br>
 		</footer> <!-- End of Footer Tag -->
 	</div> <!-- End of Footer Container -->
 </body>
